@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Pages - 5 in all</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function readfile() {
+      alert(document,getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="Return to Top"></div>
+  <h1>-- Landing Page - WeatherPy Main Page --</h1>
+  <section>
+  <hr>
+  <h2>What's on this Page</h2>
+  <hr>
+  <p>This is the Main Page (out of 7).</p>
+  <p>On this page, you should also see Icons/Links on the right side that allow you to jump to another webpage.</p>
+  <ul>
+    <li>-- This Project is composed of writing HTML code that demonstrates how to jump to and return from other webpages.</li>
+    <li>-- We will also utilize tags to make icons and images larger, bolder, more colorful, etc.</li>
+    <li>-- The other webpages are Visualization Pages (4), a Comparisons Page and a Data page.</li>
+  </ul>
+  <hr>
+  <div class="row justify-content-end">
+    <!--First and Only Column in this Row-->
+    <!--Notice how horizontally aligned this column to the right-->
+    <div class="col-md-6">
+      <h4>Comparison/Data links</h4>
+    <ol>
+      <li>-- Link to Comparisons Page</li>
+      <a href="#link-comparison">-->Link to Comparisons Page</a>
+      <hr>
+      <li>-- Link to Data Page</li>
+      <a href="#link-data">-->Link to Data Page</a>
+    </ol>
+   </div>
+  </div>
+  <hr>
+
+  <nav>
+    <div class="dropdown">
+      <div class="plots">
+        <button>Plots (click to see drop down menu)</button>
+        <ul>
+          <li>-- Visualization Fig/Page 1. - City Latitude vs Max Temperature</li>
+          <a href="#link-location1" target="_top">-->Link to WeatherPy - Latitude vs Temperature</a>
+          <li>-- Visualization Fig/Page 2. - City Latitude vs Humidity</li>
+          <a href="#link-location2" target="_top">-->Link to WeatherPy - Latitude vs Humidity</a>
+          <li>-- Visualization Fig/Page 3. - City Latitude vs Cloudiness</li>
+          <a href="#link-location3" target="_top">-->Link to WeatherPy - Latitude vs Cloudiness</a>
+          <li>-- Visualization Fig/Page 4. - City Latitude vs Wind Speed</li>
+          <a href="#link-location4" target="_top">-->Link to WeatherPy - Latitude vs Wind Speed</a>
+        </ul>
+      </div>
+      <div class="comparison">
+        <button>Comparison/Data links  (click to see drop down menu)</button>
+        <ul>
+          <li><a href="#link-comparison">-->Link to Comparisons Page</a></li>
+          <li><a href="#link-data">-->Link to Data Page</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </nav>
+  
+  <h4>Links/Icons to 6 other webpages</h2>
+  <ol>
+    <li>-- Visualization Fig/Page 1. - City Latitude vs Max Temperature   </li>
+    <a href="#link-location1">-->Link to WeatherPy - Latitude vs Temperature</a>
+    <hr>
+    <li>-- Visualization Fig/Page 2. - City Latitude vs Humidity   </li>
+    <a href="#link-location2">-->Link to WeatherPy - Latitude vs Humidity</a>
+    <hr>
+    <li>-- Visualization Fig/Page 3. - City Latitude vs Cloudiness   </li>
+    <a href="#link-location3">-->Link to WeatherPy - Latitude vs Cloudiness</a>
+    <hr>
+    <li>-- Visualization Fig/Page 4. - City Latitude vs Wind Speed   </li>
+    <a href="#link-location4">-->Link to WeatherPy - Latitude vs Wind Speed</a>
+  </ol>
+
+</section>
+
+<section>
+  <hr>
+  <div id="link-location1"></div>
+  <h1>WeatherPy - Latitude vs Temperature</h1>
+  <h2>City Latitude vs Max Temperature</h2>
+  <hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+  <article>
+  <a target="_blank" href="assets/Fig1.png">
+    <img src="assets/Fig1.png" alt="Fig. 1">
+  </a>
+  <p><em>Visualization Page 1. -- This Chart shows where the Temperature increases with the Latitude up to a point, say the equator.  From there, the temperature drops as the Latitude increases thereby moving the needle even further north and away from the equator.</em></p>
+  </article>
+  <hr>
+  <div id="link-location2"></div>
+  <h1>WeatherPy - Latitude vs Humidity</h1>
+  <h2>City Latitude vs Humidity</h2>
+  <hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+  <article>
+  <a target="_blank" href="assets/Fig2.png">
+  <img src="assets/Fig2.png" alt="Fig. 2">
+  </a>
+  <p><em>Visualization Page 2. -- This Chart shows where the Humidity increases and reaches 100% with the Latitude both thousands of miles South and North of the equator.  The Humidity strays away from 100% only at long distances away from the equator and continues to drop away from 100% the closer we move the needle towards either the North or South Pole.</em></p>
+  </article>
+  <hr>
+  <div id="link-location3"></div>
+  <h1>WeatherPy - Latitude vs Cloudiness</h1>
+  <h2>City Latitude vs Cloudiness</h2>
+  <hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+  <article>
+    <a href="assets/Fig3.png">
+    <img target="_blank" src="assets/Fig3.png" alt="Fig. 3">
+    </a>
+<p><em>Visualization Page 3. -- This Chart shows where the Cloudiness is not determined by Latitude.  There seems to be no direct relationship.</em></p>
+<hr>
+<div id="link-location4"></div>
+<h1>WeatherPy - Latitude vs Wind Speed</h1>
+<h2>Latitude vs Wind Speed</h2>
+<hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+</article>
+  <!-- an example using figure/ficaption -->
+  <figure>
+    <a target="_blank" href="assets/Fig4.png">
+    <img src="assets/Fig4.png" alt="Fig. 4">
+    </a>
+  <figcaption><em>Visualization Page 4. -- This Chart shows where the Wind Speed stays relatively low (0-25 mph) for Latitude readings around the Equator and for thousands of miles both North and South of the Equator.  The Wind Speed typically only exceeds 25 mph in the Northern Hemisphere when approaching the North Pole.</em></figcaption>
+  </figure>
+</section>
+
+<!-- Creates the Overall Grid -->
+<div class="container">
+  <hr>
+  <div id="link-comparison"></div>
+  <h1>-- Comparisons Page --</h1>
+  <hr>
+<!--First Row-->
+<div class="row">
+  <!--First of Two Columns-->
+  <div class="col-md-6">
+    <h2>Medium Figure (size 6).</h2>
+    <hr>
+  <h1>WeatherPy - Latitude vs Temperature</h1>
+  <h2>City Latitude vs Max Temperature</h2>
+  <hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+  <article>
+  <a target="_blank" href="assets/Fig1.png">
+    <img src="assets/Fig1.png" alt="Fig. 1">
+  </a>
+  <p><em>Visualization Page 1. -- This Chart shows where the Temperature increases with the Latitude up to a point, say the equator.  From there, the temperature drops as the Latitude increases thereby moving the needle even further north and away from the equator.</em></p>
+  </article>
+  </div>
+
+  <!--First of Two Columns-->
+  <div class="col-md-2"></div>
+
+  <!--Second of Two Columns-->
+  <div class="col-md-4">
+    <h1>Small Figure (size 4).</h1>
+    <hr>
+    <h1>WeatherPy - Latitude vs Cloudiness</h1>
+    <h2>City Latitude vs Cloudiness</h2>
+    <article>
+      <a href="assets/Fig3.png">
+      <img target="_blank" src="assets/Fig3.png" alt="Fig. 3">
+      </a>
+  <p><em>Visualization Page 3. -- This Chart shows where the Cloudiness is not determined by Latitude.  There seems to be no direct relationship.</em></p>
+  </div>
+</div>
+
+    <!-- Second Row -->
+  <div class="row">
+
+    <!-- First of two columns -->
+    <div class="col-md-8">
+    <h1>Large Figure (size 8).</h1>
+    <hr>
+    <h1>WeatherPy - Latitude vs Humidity</h1>
+    <h2>City Latitude vs Humidity</h2>
+    <hr>
+    <a href="#Return to Top">-->Return to Main Page--</a>
+    <article>
+    <a target="_blank" href="assets/Fig2.png">
+    <img src="assets/Fig2.png" alt="Fig. 2">
+    </a>
+    <p><em>Visualization Page 2. -- This Chart shows where the Humidity increases and reaches 100% with the Latitude both thousands of miles South and North of the equator.  The Humidity strays away from 100% only at long distances away from the equator and continues to drop away from 100% the closer we move the needle towards either the North or South Pole.</em></p>
+    </div>
+
+    <!-- Second of two columns -->
+    <div class="col-md-3">
+    </article>
+    <hr>
+    <h1>Extra Small Figure (size 3).</h1>
+    <hr>
+    <h1>WeatherPy - Latitude vs Wind Speed</h1>
+    <h2>Latitude vs Wind Speed</h2>  
+    </article>
+    <!-- an example using figure/ficaption -->
+    <figure>
+    <a target="_blank" href="assets/Fig4.png">
+    <img src="assets/Fig4.png" alt="Fig. 4">
+    </a>
+  <figcaption><em>Visualization Page 4. -- This Chart shows where the Wind Speed stays relatively low (0-25 mph) for Latitude readings around the Equator and for thousands of miles both North and South of the Equator.  The Wind Speed typically only exceeds 25 mph in the Northern Hemisphere when approaching the North Pole.</em></figcaption>
+  </figure>
+    </div>
+  </div>
+
+ </div>
+ <h1>Data Page</h1>
+ <div id="link-data"></div>
+ <hr>
+  <a href="#Return to Top">-->Return to Main Page--</a>
+ 
+<iframe id='iframe' src = 'my_html_output.html' onload='readfile()'> </iframe>
+
+</body>
+
+</html>
