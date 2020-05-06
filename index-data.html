@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Pages - 5 in all</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function readfile() {
+      alert(document,getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+    }
+  </script>
+</head>
+
+<body>
+<!-- Creates a mobile ready Data Page -->
+
+ <h1>Data Page</h1>
+ <div id="link-data"></div>
+ <hr>
+  <a href="index.html">-->Return to Main Page--</a>
+ 
+<iframe id='iframe' src = 'my_html_output.html' onload='readfile()'> </iframe>
+
+</body>
+
+</html>
